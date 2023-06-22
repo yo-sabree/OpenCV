@@ -24,7 +24,7 @@ while True:
                 print(id,cx,cy)
                 if(id==4):
                     cv2.circle(img,(cx,cy),25,(255,0,0),cv2.FILLED)
-            mpdraw.draw_landmarks(img,handlms,mhand.HAND_CONNECTIONS)
+        mpdraw.draw_landmarks(img,handlms,mhand.HAND_CONNECTIONS)
 
     cTime = time.time()
     fps = 1/(cTime-pTime)
